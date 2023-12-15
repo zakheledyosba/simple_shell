@@ -15,7 +15,7 @@ char *read_stream(void)
 	line = malloc(sizeof(char) * bufsize);
 
 	if (line == NULL)
-	{	
+	{
 		fprintf(stderr, "allocation error in read_stream");
 		exit(EXIT_FAILURE);
 	}
