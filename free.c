@@ -4,11 +4,9 @@
 void free_info(info_t *info, int free_argv)
 {
     if (info == NULL)
-	{
-        return;
-	}
+		return;
 
-	if (free_argv && info->argv != NULL) 
+	if (free_argv && info->argv != NULL)
 	{
 		int o = 0;
 		while (info->argv[o] != NULL)
